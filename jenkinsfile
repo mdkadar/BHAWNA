@@ -7,8 +7,7 @@ pipeline {
             steps {
                  withMaven(maven: 'MAVEN_HOME') {
                  bat "mvn clean install"
-                 bat "mvn clean compile"
-                 bat "mvn clean test"
+                 bat "mvn clean package"
                  }
            }
         }
